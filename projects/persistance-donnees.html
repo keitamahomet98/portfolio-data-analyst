@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet | Persistance des données</title>
+    <meta
+      name="description"
+      content="Projet de persistance des données pour fiabiliser le reporting Supply Chain et améliorer la qualité des indicateurs."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="container section">
+      <article class="card">
+        <h1>Persistance des données et qualité analytique</h1>
+
+        <h2>Contexte / objectif</h2>
+        <p>
+          Les extractions manuelles généraient des écarts de chiffres entre équipes. L’objectif était
+          de créer une base persistante fiable pour harmoniser le pilotage stocks et service client.
+        </p>
+
+        <h2>Données</h2>
+        <p>
+          Historique commandes, mouvements de stock, données articles et référentiel clients sur 18 mois.
+          Volume moyen : 2,4M de lignes.
+        </p>
+
+        <h2>Méthode (étapes)</h2>
+        <ol>
+          <li>Audit de qualité des sources et définition des règles de contrôle.</li>
+          <li>Construction de tables de persistance (SQL) et historisation des snapshots.</li>
+          <li>Automatisation des indicateurs hebdomadaires dans un script R.</li>
+          <li>Validation croisée avec les équipes supply et finance.</li>
+        </ol>
+
+        <h2>Outils utilisés</h2>
+        <p>SQL, R, GitHub, export PDF de reporting.</p>
+
+        <h2>Résultats</h2>
+        <ul>
+          <li>-35% de temps de préparation des reportings.</li>
+          <li>Écart inter-reportings réduit de 8% à moins de 1%.</li>
+          <li>Disponibilité des KPI hebdomadaires avancée de 1 jour.</li>
+        </ul>
+
+        <h2>Ce que j’ai appris</h2>
+        <p>
+          La performance analytique dépend autant de la gouvernance des données que des outils. La
+          co-construction des règles métier améliore fortement l’adoption.
+        </p>
+
+        <h2>Liens</h2>
+        <p>
+          <a href="../assets/reports/persistance_donnees.pdf">Voir le rapport PDF</a><br />
+          <a href="https://github.com/username/portfolio-data-analyst/tree/main/notebooks" target="_blank" rel="noopener">Voir le code / notebooks</a>
+        </p>
+
+        <p>
+          <a class="btn btn-primary" href="../index.html#projets">← Retour à l’accueil</a>
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
